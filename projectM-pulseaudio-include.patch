@@ -1,0 +1,11 @@
+mkdir() needs <sys/stat.h>
+--- projectM-pulseaudio-2.0.1-Source/qprojectM-pulseaudio.cpp.orig	2009-12-06 02:20:42.000000000 +0100
++++ projectM-pulseaudio-2.0.1-Source/qprojectM-pulseaudio.cpp	2011-12-30 14:55:42.393904306 +0100
+@@ -68,6 +68,7 @@
+ #include <unistd.h>
+ #include <string.h>
+ #include <errno.h>
++#include <sys/stat.h>
+ 
+ //#include <pulsecore/gccmacro.h>
+ 
