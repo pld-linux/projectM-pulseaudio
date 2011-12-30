@@ -13,8 +13,6 @@ Patch1:		%{name}-include.patch
 URL:		http://projectm.sourceforge.net/
 BuildRequires:	QtCore-devel >= 4
 BuildRequires:	QtGui-devel >= 4
-BuildRequires:	QtOpenGL-devel >= 4
-BuildRequires:	QtXml-devel >= 4
 BuildRequires:	cmake >= 2.4.0
 BuildRequires:	libprojectM-devel >= 1:2.0.1
 BuildRequires:	libstdc++-devel
@@ -52,9 +50,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
-
-%post	-p /sbin/ldconfig
-%postun	-p /sbin/ldconfig
 
 %files
 %defattr(644,root,root,755)
