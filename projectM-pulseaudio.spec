@@ -33,8 +33,8 @@ Wizualizacja dla Pulseaudio wykorzystująca projectM.
 
 %prep
 %setup -q -n %{name}-%{version}-Source
-%patch0 -p1
-%patch1 -p1
+%patch -P0 -p1
+%patch -P1 -p1
 
 %build
 # note: this project doesn't support separate build dir (expects generated include in source dir)
